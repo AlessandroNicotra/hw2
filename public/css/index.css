@@ -1,0 +1,286 @@
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color: #62d1ff;
+}
+
+nav a{
+    text-decoration: none;
+    color: #212121;
+}
+
+nav a#logo{
+    font-size: 25px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+nav a{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav form input[type=text]{
+    width: 300px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left:  100px;
+}
+
+nav form input[type=submit]{
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+div.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+div.wrapper div#aggiunti{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    min-width: 400px;
+    margin-right: 10px;
+}
+
+div.wrapper div#profilo{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+div#profilo p.text{
+    text-align: center;
+}
+
+div#profilo a.add_fav{
+    display: inline-block;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #212121;
+    text-align: center;
+}
+
+div#profilo a.add_fav:hover{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+div#profilo a.logout{
+    display: inline-block;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #212121;
+    text-align: center;
+}
+
+div#profilo a.logout:hover{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+div.locandina{
+    position: relative;
+    display: block;
+    border: solid #6c6c6c 5px;
+    border-radius: 5px;
+    margin: 10px;
+    height: 204px;
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+}
+
+div.locandina_p{
+    position: relative;
+    border: solid #6c6c6c 5px;
+    border-radius: 5px;
+    margin: 10px;
+    height: 306px;
+    width: 225px;
+}
+
+div.locandina_p img{
+    height: 306px;
+    width: 225px;
+}
+
+div.locandine{
+    display: flex;
+}
+
+div.locandina img{
+    height: 100%;
+    width: 100%;
+}
+
+div.locandina a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.locandina_p a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a.lista{
+    display: inline-block;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #212121;
+}
+
+a.lista:hover{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+div.rating_overlay{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(98, 209, 255, 0.8);
+    z-index: 1;
+}
+
+div.locandina:hover div.rating_overlay{
+     display: flex;
+ }
+
+span.stella{
+    margin: 2px;
+    cursor: pointer;
+}
+
+div.stelle{
+    display: flex;
+    font-size: 30px;
+}
+
+p.titolo{
+    z-index: -1;
+}
+
+p.new{
+    text-align: center;
+}
+
+div.locandina_p p{
+    text-align: center;
+}
+
+div.menu{
+    display: none;
+    align-items: center;
+    margin-top: 10px;
+}
+
+div.d_menu div{
+    width: 30px;
+    height: 5px;
+    background-color: #62d1ff;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+p.back{
+    display: none;
+    text-align: right;
+    color: #62d1ff;
+    font-size: 40px;
+    margin: 5px;
+}
+
+p.logout{
+    text-decoration: none;
+    color: #212121;
+    text-align: center;
+    cursor: pointer;
+}
+
+p.logout:hover{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+@media(max-width: 700px){
+    div.wrapper div#profilo{
+        display: none;
+    }
+
+    nav form input[type=text]{
+        margin-left: 0;
+    }
+
+    div#film_4.locandina{
+        display: none;
+    }
+
+    div#film_5.locandina{
+        display: none;
+    }
+
+    div.wrapper div#aggiunti{
+        margin-left: 10px;
+        min-width: 0;
+    }
+
+    div.menu{
+        display: flex;
+    }
+
+    div#profilo{
+        margin-right: 10px;
+    }
+
+    p.back{
+        display: block;
+    }
+}
+
+@media(max-width: 535px){
+    nav form input[type=text]{
+        width: 165px;
+    }
+
+    nav form input[type=submit]{
+        width: 60px;
+        font-size: 12px;
+    }
+
+    div#film_3.locandina_b{
+        display: none;
+    }
+}

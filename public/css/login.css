@@ -1,0 +1,162 @@
+body{
+    background-color: lightskyblue;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+div.no_session{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    width: 50%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    box-shadow: 5px 5px 25px 5px;
+    background-color: white;
+    border-radius: 20px;
+    transition: height 1s;
+}
+
+div#button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+}
+
+form.registra{
+    display: none;
+}
+
+form.login input{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+a#logo{
+    font-size: 25px;
+}
+
+a#logo:hover{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+p{
+    margin: 5px;
+}
+
+div#password{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+input[type=submit]{
+    background-color: lightskyblue;
+    color: #212121;
+    font-weight: bold;
+}
+
+wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#account{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form.login{
+    display: none;
+}
+
+button{
+    background-color: lightskyblue;
+    color: #212121;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.validb{
+    border: solid green;
+}
+
+.invalidb{
+    border: solid red;
+}
+
+.valid{
+    color: green;
+}
+
+.invalid{
+    color: red;
+}
+
+@media(max-width: 700px){
+    div.no_session{
+        width: 70%;
+    }
+
+    div#button{
+        width: 80%;
+    }
+
+    a#logo{
+        font-size: 35px;
+    }
+
+    button{
+        font-size: 18px;
+    }
+
+    form{
+        width: 80%;
+    }xs
+}

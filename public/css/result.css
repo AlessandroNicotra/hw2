@@ -1,0 +1,143 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.ris{
+    width: 75%;
+    margin: 10px auto auto;
+    display: flex;
+}
+
+div.poster img{
+    height: 100%;
+    width: 100%;
+}
+
+div.text{
+    display: flex;
+    flex-direction: column;
+}
+
+div.movie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.user{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 200px;
+    width: 280px;
+    background-color:  #62d1ff;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+div.ratings{
+    margin-top: 10px;
+}
+
+div.ratings span{
+    margin-right: 10px;
+}
+
+span.titolo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span.anno{
+    color: rgba(0, 0, 0, 0.59);
+    font-weight: bold;
+}
+
+span.plot{
+    margin-top: 10px;
+}
+
+span.rate{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+span.simbolo{
+    font-size: 30px;
+}
+
+div.rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.stelle{
+    display: flex;
+    font-size: 30px;
+}
+
+span.stella{
+    cursor: pointer;
+}
+
+div.poster{
+    text-align: center;
+    height: 408px;
+    width: 300px;
+    border: solid #6c6c6c 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+@media(max-width: 700px){
+    div.ris{
+        flex-direction: column;
+    }
+
+    div.poster{
+        margin-right: 0;
+        height: 306px;
+        width: 225px;
+    }
+
+    div.user{
+        margin-right: 0;
+        height: 150px;
+        width: 180px;
+    }
+
+    div.stelle{
+        font-size: 20px;
+    }
+
+    div.rate p{
+        margin: 0;
+    }
+
+    span.simbolo{
+        font-size: 20px;
+    }
+
+    div.ratings{
+        margin-bottom: 30px;
+    }
+}
