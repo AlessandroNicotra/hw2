@@ -21,6 +21,7 @@ window.onresize = window_resize
 function window_resize(){
     if(!media700.matches){
         fav.style.display = 'flex'
+        liste.style.display = 'flex'
     }
     else{
         fav.style.display = 'none'
