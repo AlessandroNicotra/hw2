@@ -27,18 +27,18 @@ Route::get('/index', function () {
     return view('index');
 })->middleware('auth');
 
-Route::get('/search/{id}/{page}', [APIController::class, 'search'])->name('search');
+Route::get('/search/{id}/{page}', [APIController::class, 'search'])->name('search')->middleware('auth');
 Route::post('/search_f', function (Request $request){
     return redirect('/search/' . $request->input('cerca') . '/1');
-});
+})->middleware('auth');
 
 Route::get('/result/{id}', function () {
     return view('result');
-});
+})->middleware('auth');
 
 Route::get('/lista/{type}', function () {
     return view('lista');
-});
+})->middleware('auth');
 
 Route::get('/setmovie/{titolo}/{id}/{poster}/{value}/{val}', [DBController::class, 'setValue'])->name('setMovie');
 Route::get('/setrate/{id}/{rating}', [DBController::class, 'updateRating'])->name('setRating');
